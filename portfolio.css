@@ -98,8 +98,15 @@ html {
 .project-tile a{
 	text-decoration: none;
 }
-@media screen and (max-width: 480px){
+@media only screen and (max-width: 480px){
 	#welcome-section {
 		width: 100vw;
+	}
+	#navbar {
+		font-size: 20px;
+	}
+	.project-tile > .external {
+		font-size: 16px;
+
 	}
 }
