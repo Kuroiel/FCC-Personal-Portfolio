@@ -1,3 +1,108 @@
+/*css reset from html5doctor.com*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+/*end reset
+*/
+
 html {
 	background-color: grey;
+}
+#navbar {
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	float: right;
+	z-index: 1;
+	font-size: 24px;
+	background: transparent;
+	height: 60px;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+#navbar a {
+	height: 50px;
+	text-align: right;
+	text-decoration: none;
+	padding: 14px 20px;
+	color: white;
+	margin: 0px 6px 0px 6px;
+	top: 3px;
+	left: 50px;
+}
+#welcome-section {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-color: rgb(12, 187, 20);
+}
+#welcome-section > h1, #welcome-section > p {
+	font-family: Helvetica, sans-serif;
+	font-size: 6vw;
+	background: transparent;
+	text-align: center;
+	font-style: italic;
+}
+#navWelcome {
+	background: transparent;
+	height: 50px;
+}
+#navProjects {
+	background: transparent;
+	height: 50px;
+}
+#navContact {
+	background: transparent;
+	height: 50px;
+}
+.project-tile > .external {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 5px;
+}
+.project-tile a{
+	text-decoration: none;
+}
+@media screen and (max-width: 480px){
+	#welcome-section {
+		width: 100vw;
+	}
 }
