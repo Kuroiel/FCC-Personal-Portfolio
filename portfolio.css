@@ -139,6 +139,7 @@ td {
 	font-size: 25px;
 	background: #ff99e6;
 	text-align: center;
+	height: 100%;
 }
 .project-tile > .external {
 	display: flex;
