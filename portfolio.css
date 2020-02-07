@@ -42,7 +42,9 @@ blockquote, q {
 
 html {
 	background-color: grey;
+	scroll-behavior: smooth;
 }
+
 #navbar {
 	overflow: hidden;
 	position: fixed;
@@ -72,13 +74,17 @@ html {
 	background-color: rgb(12, 187, 20);
 }
 #welcome-section > h1, #welcome-section > p {
-	font-family: Helvetica, sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 6vw;
 	background: transparent;
 	text-align: center;
 	font-style: italic;
 }
 #navWelcome {
+	background: transparent;
+	height: 50px;
+}
+#navCerts {
 	background: transparent;
 	height: 50px;
 }
@@ -90,6 +96,50 @@ html {
 	background: transparent;
 	height: 50px;
 }
+
+#certs {
+	height: 30vh;
+	background-color: #80b3ff;
+}
+#certText > h3, #certText > p {
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+	font-size: 35px;
+}
+#certText > p {
+	margin-bottom: 5px;
+}
+#certText {
+	padding-top: 5px;
+}
+table {
+	border-collapse: collapse;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	padding-top: 10px;
+}
+table, th, td {
+	border: 1px solid transparent;
+}
+th, td {
+	text-align: center;
+	padding: 5px;
+	height: 25px;
+}
+th {
+	background: #ff5c33;
+}
+td {
+	background: #ff8566;
+}
+#projects {
+	font-family: 'Inconsolata', monospace;
+	font-size: 25px;
+	background: #ff99e6;
+	text-align: center;
+}
 .project-tile > .external {
 	display: flex;
 	flex-direction: row;
@@ -97,6 +147,15 @@ html {
 }
 .project-tile a{
 	text-decoration: none;
+}
+.center {
+	width: 100%;
+	text-align: center;
+}
+#contact {
+	font-family: 'Roboto', sans-serif;
+	font-size: 40px;
+	text-align: center;
 }
 @media only screen and (max-width: 480px){
 	#welcome-section {

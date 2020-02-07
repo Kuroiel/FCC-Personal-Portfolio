@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Nunito:400,700,800,900|Raleway|Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="portfolio.css"/>
 </head>
 
+<body>
 <nav id="navbar">
 <a href="#welcome-section" id="navWelcome">Welcome</a>
+<a href="#certs" id="navCerts">Certificates</a>
 <a href="#projects" id="navProjects">Projects</a>
 <a href="#contact" id="navContact">Contact</a>
 </nav>
@@ -14,36 +17,56 @@
 
 
 <section id="welcome-section">
-	<h1>Welcome!</h1>
+	<h1>Lali-ho!</h1>
 	<p>My name is Felix, and this is my portfolio page!</p>
 </section>
 
 <section id="certs">
+	<div id="certText">
 	<h3>Completed Certifications</h3>
-	<p>Here is a list of my completed FCC certifications. You can find them on my FCC profile page as well.</p>
-	<ul id="certList">
-		<li><a href="https://www.freecodecamp.org/certification/kuroiel/responsive-web-design">Responsive Web Design</a></li>
-	</ul><br>
+	<p>Here is a list of my completed certifications. You can find the FCC ones on my FCC profile page as well.</p>
+</div>
+	<table id="certList">
+		<tr>
+			<th>Certificate</th>
+			<th>Issuing Organization</th>
+		</tr>
+		<tr>
+			<td><a href="https://www.freecodecamp.org/certification/kuroiel/responsive-web-design">Responsive Web Design</a></td>
+			<td>FreeCodeCamp</td>
+		</tr>
+		<tr>
+			<td><a href="https://www.freecodecamp.org/certification/kuroiel/javascript-algorithms-and-data-structures">JavaScript Algorithms and Data Structures</a></td>
+			<td>FreeCodeCamp</td>
+		</tr>
+	</table>
+</section>
 
 <section id="projects">
+	<h1>Projects</h1><br />
 <h4>Here are the projects I've worked on so far from FreeCodeCamp's curriculum</h4>
 <h4>Any other projects I work on outside FCC's curriculum will also be featured here.</h4>
 <h4>All projects have a short description, and any FCC projects will have a link to the original project guidelines and user stories on FCC's site. All applicable projects will have a link to preview what the site looks like on CodePen as well as source code links to Github.</h4><br>
-<p>This site doesn't look very pretty for fancy right now, but it will be updated with additional CSS and projects as time allows.</p><br>
 
 <div class="project-tile" id="portfolio">
 	<h3>Personal Portfolio Page</h3>
 	<p>This is FCC's "Build a Personal Portfolio Webpage" project found <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage">here.</a> Thats this webpage! \o/</p><br>
+	<div class="center">
 		<a href="#welcome-section" class="external">Preview site (Psst you're looking at it!)</a>
+		<br />
 		<a href="https://github.com/Kuroiel/FCC-Personal-Portfolio" class="external">Source code</a>
+	</div>
 	</div>
 	<br>
 
 <div class="project-tile" id="documentation">
 	<h3>Technical Documentation Page</h3>
 	<p>This is FCC's "Build a Technical Documentation Page" project found <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page">here</a>. I made the site based on Python because I thought it would be interesting to look at the basics of another scripting language and see where it is similar and where it differs from JavaScript. I do plan on revisting and learning Python in the future and this website will be updated more as I study.</p><br>
+	<div class="center">
 	<a href="https://codepen.io/kuroiel/full/vYYNdga" class="external">Preview site</a>
+	<br />
 	<a href="https://github.com/Kuroiel/FCC-Technical-Documentation-Page" class="external">Source code</a>
+</div>
 	</div>
 <br>
 
@@ -51,27 +74,35 @@
 	<h3>Product Landing Page</h3>
 	<p>This is FCC's "Build a Product Landing Page" project found <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page">here.</a> This is based on Quantum Dots as I have previous experience working with it. For more info on what quantum dots are and how they are used in displays <a href="https://en.wikipedia.org/wiki/Quantum_dot_display">check out this Wikipedia page.</a></p>
 	<br>
+	<div class="center">
 	<a href="https://codepen.io/kuroiel/full/BaBgWJQ" class="external">Preview site</a>
+	<br />
 	<a href="https://github.com/Kuroiel/FCC-product-page" class="external">Source code</a>
+</div>
 </div>
 <br>
 
 <div class="project-tile" id="survey">
 	<h3>Survey Form</h3>
 	<p>This is FCC's "Build a Survey Form" project found <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form">here</a>. Note, this one has major contrast issues which are there by design.</p><br>
+	<div class="center">
 	<a href="https://codepen.io/kuroiel/full/ExYOBMP" class="external">Preview site</a>
+	<br />
 	<a href="https://github.com/Kuroiel/FCC-Survey-Page" class="external">Source code</a>
+</div>
 </div>
 <br>
 
 <div class="project-tile" id="tribute">
 	<h3>Tribute Page</h3>
 	<p>This is FCC's "Build a Tribute Page" found <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page">here</a>.</p><br>
+	<div class="center">
 	<a href="https://codepen.io/kuroiel/full/MWgpNOP" class="external">Preview page</a>
+	<br />
 	<a href="https://github.com/Kuroiel/FCC-tribute-page" class="external">Source code</a>
 </div>
+</div>
 </section><br>
-
 
 
 
@@ -82,6 +113,10 @@
 <a href="https://www.linkedin.com/in/felixjlee/">LinkedIn</a>
 <a href="mailto: felixjlee69@gmail.com">Email</a>
 </section>
+
+
+</body>
+
 
 </html>
 
