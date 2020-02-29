@@ -75,7 +75,7 @@ html {
 }
 #welcome-section > h1, #welcome-section > p {
 	font-family: 'Raleway', sans-serif;
-	font-size: 6vw;
+	font-size: 5vw;
 	background: transparent;
 	text-align: center;
 	font-style: italic;
@@ -98,7 +98,7 @@ html {
 }
 
 #certs {
-	height: 30vh;
+	height: 100%;
 	background-color: #80b3ff;
 }
 #certText > h3, #certText > p {
